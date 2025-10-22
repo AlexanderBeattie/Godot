@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq55cif1evcuk"]
+
+[ext_resource type="Material" uid="uid://r45v0146fojs" path="res://Materials/my_first_material.tres" id="1_g22v7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_mac0m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5o3kl"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Snowman" type="Node3D" parent="."]
+transform = Transform3D(0.080599, 0, -0.9967466, 0, 1, 0, 0.9967466, 0, 0.080599, 0, 0, 0)
+
+[node name="Legs" type="MeshInstance3D" parent="Snowman"]
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_mac0m")
+skeleton = NodePath("../..")
+
+[node name="Torso" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.66889274, 0, 0, 0, 0.66889274, 0, 0, 0, 0.66889274, 0.014897168, 0.6758882, 0.004190922)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_mac0m")
+skeleton = NodePath("../..")
+
+[node name="Arms" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.22381322, 0, 0, 0, 0.14637043, 0, 0, 0, 1.0075231, 0.037979245, 0.71148473, -0.03881681)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("BoxMesh_5o3kl")
+skeleton = NodePath("../..")
+
+[node name="Head" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.46572524, 0, 0, 0, 0.46572524, 0, 0, 0, 0.46572524, 0.014897168, 1.1559222, 0.004190922)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_mac0m")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.81214464, 0.5834562, 0, -0.5834562, 0.81214464, -0.025930166, 2.49798, 2.4173086)
+fov = 70.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002204895, 3.6337364, 2.4211128)

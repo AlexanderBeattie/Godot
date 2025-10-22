@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwyptc281s380"]
+
+[ext_resource type="Texture2D" uid="uid://bn5t7eog74s1y" path="res://Sprites/Player.png" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cfykowxjsrpgv" path="res://Scenes/coin.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(195, 148)
+texture = ExtResource("1_0xm2m")
+
+[node name="Coin" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(303, 149)
+
+[node name="Coin2" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(380, 148)
+
+[node name="Coin3" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(453, 148)
+
+[node name="Coin4" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(519, 149)
+
+[node name="Player2" type="Sprite2D" parent="."]
+position = Vector2(402, 301)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player3" type="Sprite2D" parent="."]
+position = Vector2(402, 301)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player4" type="Sprite2D" parent="."]
+position = Vector2(479, 306)
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player5" type="Sprite2D" parent="."]
+position = Vector2(310.00006, 304.00003)
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player6" type="Sprite2D" parent="."]
+position = Vector2(458, 230.00003)
+rotation = 0.7853982
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player7" type="Sprite2D" parent="."]
+position = Vector2(345, 230.00003)
+rotation = -0.5235988
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player8" type="Sprite2D" parent="."]
+position = Vector2(458, 380.85092)
+rotation = 2.6179938
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
+
+[node name="Player9" type="Sprite2D" parent="."]
+position = Vector2(345, 380.8509)
+rotation = 3.7215917
+scale = Vector2(0.6363636, 0.6363636)
+texture = ExtResource("1_0xm2m")
